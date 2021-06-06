@@ -14,7 +14,7 @@
 
 3-Digite no prompt o comando <b>"node server.js"</b> para ligar o servidor local para fazer as requisições <b>(Não feche o propmt de comando)</b>. 
 
-4-Utilizando algum dos programas anteriormente baixados para realizar as requisições, realize a requisição Get utilizando o link: http://localhost:8080/status Em caso de sucesso irá retornar "Ok" no body como resposta.
+4-Utilizando algum dos programas anteriormente baixados para realizar as requisições, realize a requisição GET utilizando o link: http://localhost:8080/status Em caso de sucesso irá retornar "Ok" no body como resposta.
 
 5- Acesse o E-comerce www.magazineluiza.com.br e clique em algum produto, após carregar o produto copie o link do navegador
 
