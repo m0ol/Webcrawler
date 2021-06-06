@@ -12,7 +12,7 @@
 
 2-Abra o prompt de comando e acesse a raiz do projeto do código baixado na pasta <b>"Webcrawler"</b> do repositório
 
-3-Digite no prompt o comando <b>"node server.js"</b> para ligar o servidor local para fazer as requisições (Não feche o propmt de comando). 
+3-Digite no prompt o comando <b>"node server.js"</b> para ligar o servidor local para fazer as requisições <b>(Não feche o propmt de comando)</b>. 
 
 4-Utilizando algum dos programas anteriormente baixados para realizar as requisições, realize a requisição Get utilizando o link: http://localhost:8080/status Em caso de sucesso irá retornar "Ok" no body como resposta.
 
