@@ -8,7 +8,7 @@ module.exports = {
       case "/scrap_product":
         let cheerio = require("cheerio");
         let dataURL = [];
-        //Carrega os dados do site passado pela API
+        //Carrega os dados do site passados pela API
         https
           .get(path.searchParams.get("url"), (res) => {
             res.on("data", (data) => {
