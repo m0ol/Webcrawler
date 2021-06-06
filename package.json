@@ -17,5 +17,6 @@
   },
   "homepage": "https://github.com/m0ol/Webcrawler#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.9"
   }
 }
