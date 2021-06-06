@@ -1,14 +1,13 @@
 module.exports = {
   handleRequest: function (request, response) {
-    var https = require("https");
-    var baseURL = "https://" + request.headers.host + "/";
-    var path = new URL(request.url, baseURL);
-    //Switch para as rotas da API
+    const https = require("https");
+    const cheerio = require("cheerio");
+    const baseURL = "https://" + request.headers.host + "/";
+    const path = new URL(request.url, baseURL);
+
     switch (path.pathname) {
       case "/scrap_product":
-        let cheerio = require("cheerio");
         let dataURL = [];
-        //Carrega os dados do site passados pela API
         https
           .get(path.searchParams.get("url"), (res) => {
             res.on("data", (data) => {
@@ -18,7 +17,6 @@ module.exports = {
               dataURL = Buffer.concat(dataURL).toString();
               let $ = cheerio.load(dataURL);
               var availability_product = true;
-              //Verifica se existe tag de produto indisponível e preenche os campos de acordo
               if ($(".unavailable__product").length) {
                 var title = $("h1").text();
                 var imagelink = $(".unavailable__product-img").attr("src");
@@ -36,7 +34,6 @@ module.exports = {
                 );
                 var url = path.searchParams.get("url");
               }
-              //Monta o JSON para retorno da requisição
               let productJson = {
                 name: title,
                 image_primary: imagelink,
@@ -59,13 +56,11 @@ module.exports = {
           });
         break;
       case "/status":
-        //Retorna Ok no body como resposta a requisição
         response.writeHead(200, { "Content-Type": "text/html" });
         response.write("OK");
         response.end();
         break;
       default:
-        //Caso nenhuma rota definida seja feita na requisição
         response.writeHead(404);
         response.write("Rota não definida");
         response.end();
