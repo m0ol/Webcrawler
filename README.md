@@ -4,7 +4,7 @@
 
 1-Baixe e instale o <a href ="https://nodejs.org/en/download/">Node</a>
 
-2-Baixa e instale um programa para fazer as requisições exemplos de programas: <a href="https://www.postman.com/">Postman</a>, <a href="https://curl.se/download.html">Curl</a>
+2-Baixa e instale algum programa para fazer as requisições exemplos de programas: <a href="https://www.postman.com/">Postman</a>, <a href="https://curl.se/download.html">Curl</a>
 
 <b>Como testar o código:</b>
 
