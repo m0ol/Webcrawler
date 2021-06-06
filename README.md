@@ -18,6 +18,6 @@
 
 5- Acesse o E-comerce www.magazineluiza.com.br e clique em algum produto, após carregar o produto copie o link do navegador
 
-6-Realize a operação POST, colocando o link copiado no formato "http://localhost:8080/scrap_product?url="<b>cole o link aqui</b>". Exemplo de requisição: https://localhost:8080/scrap_product?url=https://www.magazineluiza.com.br/porta-pet-door-para-caes-e-gatos-ate-7kg-com-trava-4-funcoes-desembrulha-presentes/p/ecd90def61/pe/pstg/
+6-Realize a operação POST, colocando o link copiado no formato "http://localhost:8080/scrap_product?url="<b>cole o link aqui</b>". Exemplo de requisição: http://localhost:8080/scrap_product?url=https://www.magazineluiza.com.br/porta-pet-door-para-caes-e-gatos-ate-7kg-com-trava-4-funcoes-desembrulha-presentes/p/ecd90def61/pe/pstg/
 
 7- Se for um link válido, irá retornar as informações: <b>nome do produto, link da imagem do produto, preço, disponibilidade do produto e URL do produto</b> no formato JSON no body como resposta.
