@@ -10,7 +10,7 @@
 
 1-Baixe o código do repositório
 
-2-Abra o prompt de comando e acesse a raiz do projeto do código baixado na pasta <b>"Webcrawler"</b> do repositório
+2-Abra o prompt de comando e navegue até a pasta <b>"Webcrawler"</b> do projeto baixado.
 
 3-Digite no prompt o comando <b>"node server.js"</b> para ligar o servidor local para fazer as requisições <b>(Não feche o propmt de comando)</b>. 
 
